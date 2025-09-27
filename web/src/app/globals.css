@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: hsl(230 15% 10%);
+  --color-bg-card: hsl(230 14% 14%);
+  --color-bg-raised: hsl(230 14% 16%);
+  --color-text: hsl(220 15% 92%);
+  --color-text-muted: hsl(220 10% 70%);
+  --color-border: hsl(230 12% 22%);
+  --color-accent-info: hsl(212 90% 55%);
+  --color-accent-success: hsl(148 60% 45%);
+  --color-accent-warn: hsl(40 95% 55%);
+  --color-accent-danger: hsl(0 70% 55%);
+}
+
+:root { color-scheme: dark; --nav-chip-bg: hsl(230 14% 16%);}
+body { @apply bg-bg text-text antialiased; }
+
+.container-max { @apply max-w-screen-xl mx-auto px-4 md:px-6; }
+.card-base { @apply bg-bg-card border border-border rounded-2xl shadow-[0_6px_20px_rgba(0,0,0,.25)]; }
+.nav-blur {
+  backdrop-filter: saturate(180%) blur(8px);
+  background:
+    linear-gradient(to bottom,
+      hsla(230, 15%, 14%, 0.92),
+      hsla(230, 15%, 12%, 0.82));
+}
+
+.text-h1 { font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; }
+.text-h2 { font-size: 1.375rem; line-height: 1.75rem; font-weight: 700; }
+.text-body { font-size: .9375rem; line-height: 1.5rem; }
+.text-small { font-size: .8125rem; line-height: 1.25rem; }
+a { text-decoration: none; }
+.wallet-adapter-button {
+  border-radius: 12px !important;
+  background: var(--nav-chip-bg) !important;
+  color: inherit !important;
+  border: 1px solid hsl(230 12% 22%) !important;
+  padding: 8px 12px !important;
+}
+.wallet-adapter-button:hover {
+  background: hsl(230 14% 18%) !important;
+}
+.wallet-adapter-dropdown-list,
+.wallet-adapter-modal-wrapper {
+  background: hsl(230 14% 14%) !important;
+  border: 1px solid hsl(230 12% 22%) !important;
+  border-radius: 14px !important;
+}
+/* WalletMultiButton → „хапче“ като останалите */
+.wallet-adapter-button {
+  border-radius: 9999px !important;
+  background: hsl(230 14% 16%) !important;
+  border: 1px solid hsl(230 12% 22%) !important;
+  padding: 8px 16px !important;
+  font-size: 0.9375rem !important;
+  transition: all .2s ease-in-out;
+}
+.wallet-adapter-button:hover {
+  background: hsl(230 14% 18%) !important;
+}
+
+.btn-pill {
+  @apply px-4 py-2 rounded-full text-sm no-underline transition
+         text-text-muted hover:text-text hover:bg-white/6
+         border border-border bg-bg-raised/60;
+}
+
+.btn-pill-primary {
+  @apply px-4 py-2 rounded-full text-sm no-underline transition
+         bg-emerald-600 text-white hover:bg-emerald-500;
+}
+
