@@ -1,0 +1,47 @@
+version: "3.9"
+
+networks:
+  edge:            # само Nginx „гледа“ към Интернет
+  backend:         # вътрешна мрежа между nginx, web, gatewa
+
+services:
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: solclaimer-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    env_file:
+      - ./deploy/nginx/.env
+    volumes:
+      - ./deploy/nginx/certs:/etc/nginx/certs:ro
+      - ./deploy/nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./web/public:/var/www/public:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - web
+    networks:
+      - edge
+      - backend
+    command: [ "nginx", "-g", "daemon off;" ]
+    restart: unless-stopped
+
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: solclaimer-web
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      # ако имаш външни променливи ги добави тук
+    volumes:
+      - ./data:/app/data
+    expose:
+      - "3001"
+    networks: [backend]
+    restart: unless-stopped
+
+

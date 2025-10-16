@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* ───────────── Тема ───────────── */
 @theme {
   --color-bg: hsl(230 15% 10%);
   --color-bg-card: hsl(230 14% 14%);
@@ -13,61 +14,99 @@
   --color-accent-danger: hsl(0 70% 55%);
 }
 
-:root { color-scheme: dark; --nav-chip-bg: hsl(230 14% 16%);}
-body { @apply bg-bg text-text antialiased; }
+/* ───────────── Основни настройки ───────────── */
+:root {
+  color-scheme: dark;
+  --nav-chip-bg: hsl(230 14% 16%);
+  --brand: oklch(58.8% 0.158 241.966); /* основният ти акцент */
+}
 
-.container-max { @apply max-w-screen-xl mx-auto px-4 md:px-6; }
-.card-base { @apply bg-bg-card border border-border rounded-2xl shadow-[0_6px_20px_rgba(0,0,0,.25)]; }
+body {
+  @apply bg-bg text-text antialiased;
+}
+
+/* ───────────── Лейаут / Компоненти ───────────── */
+.container-max {
+  @apply max-w-screen-xl mx-auto px-4 md:px-6;
+}
+
+.card-base {
+  @apply bg-bg-card border border-border rounded-2xl shadow-[0_6px_20px_rgba(0,0,0,.25)];
+}
+
 .nav-blur {
   backdrop-filter: saturate(180%) blur(8px);
-  background:
-    linear-gradient(to bottom,
-      hsla(230, 15%, 14%, 0.92),
-      hsla(230, 15%, 12%, 0.82));
+  background: linear-gradient(
+    to bottom,
+    hsla(230, 15%, 14%, 0.92),
+    hsla(230, 15%, 12%, 0.82)
+  );
 }
 
-.text-h1 { font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; }
-.text-h2 { font-size: 1.375rem; line-height: 1.75rem; font-weight: 700; }
-.text-body { font-size: .9375rem; line-height: 1.5rem; }
-.text-small { font-size: .8125rem; line-height: 1.25rem; }
-a { text-decoration: none; }
+/* ───────────── Текстови стилове ───────────── */
+.text-h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.text-h2 {
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.text-body {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.text-small {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ───────────── Wallet Adapter бутони ───────────── */
 .wallet-adapter-button {
-  border-radius: 12px !important;
+  border-radius: 9999px !important; /* „хапче“ */
   background: var(--nav-chip-bg) !important;
   color: inherit !important;
-  border: 1px solid hsl(230 12% 22%) !important;
-  padding: 8px 12px !important;
-}
-.wallet-adapter-button:hover {
-  background: hsl(230 14% 18%) !important;
-}
-.wallet-adapter-dropdown-list,
-.wallet-adapter-modal-wrapper {
-  background: hsl(230 14% 14%) !important;
-  border: 1px solid hsl(230 12% 22%) !important;
-  border-radius: 14px !important;
-}
-/* WalletMultiButton → „хапче“ като останалите */
-.wallet-adapter-button {
-  border-radius: 9999px !important;
-  background: hsl(230 14% 16%) !important;
-  border: 1px solid hsl(230 12% 22%) !important;
+  border: 1px solid var(--color-border) !important;
   padding: 8px 16px !important;
   font-size: 0.9375rem !important;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+
 .wallet-adapter-button:hover {
   background: hsl(230 14% 18%) !important;
 }
 
+.wallet-adapter-dropdown-list,
+.wallet-adapter-modal-wrapper {
+  background: var(--color-bg-card) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 14px !important;
+}
+
+/* ───────────── Бутон стилове ───────────── */
 .btn-pill {
   @apply px-4 py-2 rounded-full text-sm no-underline transition
-         text-text-muted hover:text-text hover:bg-white/6
+         text-text-muted hover:text-text hover:bg-white/5
          border border-border bg-bg-raised/60;
 }
 
+/* Primary бутон с OKLCH brand цвят */
 .btn-pill-primary {
-  @apply px-4 py-2 rounded-full text-sm no-underline transition
-         bg-emerald-600 text-white hover:bg-emerald-500;
+  @apply px-5 py-2.5 rounded-2xl text-white;
+  border: 1px solid color-mix(in oklch, var(--brand) 40%, transparent);
+  background-color: color-mix(in oklch, var(--brand) 30%, transparent);
+  transition: background-color 0.2s ease;
 }
 
+.btn-pill-primary:hover {
+  background-color: color-mix(in oklch, var(--brand) 60%, transparent);
+}

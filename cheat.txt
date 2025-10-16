@@ -1,0 +1,19 @@
+Рестарт без билд:
+docker compose restart web
+
+Рестарт с ребилд (без да пипаш nginx и др.):
+docker compose up -d --no-deps --build web
+
+Ако искаш да видиш логовете след рестарт:
+docker compose logs -f web
+
+
+# 1) Рекреирай nginx с новия compose (без template командата)
+docker compose up -d --force-recreate nginx
+
+# 2) Провери
+docker compose exec nginx nginx -t
+docker logs --tail=50 solclaimer-nginx
+
+# 3) Тествай от контейнера към upstream-ите (по желание)
+docker compose exec nginx sh -lc 'apk add --no-cache curl >/dev/null; curl -I http://web:3001; curl -I http://host.docker.internal:3001'
