@@ -1,0 +1,158 @@
+{
+  "FvfyNv7LvmcLpNeo8hZ8DQM76j9gTqTxq9SSUEAPw1eB": {
+    "totalClosed": 86,
+    "totalReclaimedLamports": 142079600,
+    "events": [
+      {
+        "ts": "2025-10-05T12:54:09.613Z",
+        "reclaimedLamports": 20392800,
+        "txSigs": [
+          "2MzmYSj5sKryhSHmBChBeMDVxANwUcwxw8pRVyjNFnZ6TBvE3LkS1jiqV9w6kKiGDURzhrjvRBKitRUMK1xHRA8N"
+        ],
+        "closedCount": 10
+      },
+      {
+        "ts": "2025-10-05T17:44:04.361Z",
+        "reclaimedLamports": 1959280,
+        "txSigs": [
+          "nEFyhv3BXRvydmwiMtgvQPKhXF9ZgE2UvYMwxMZBXYWTQapWkykiPnq6eNP67exksBD25L6czj2HPUz1ARaGx8E"
+        ],
+        "closedCount": 1
+      },
+      {
+        "ts": "2025-10-05T21:19:48.681Z",
+        "reclaimedLamports": 0,
+        "txSigs": [],
+        "closedCount": 1
+      },
+      {
+        "ts": "2025-10-06T13:46:17.552Z",
+        "reclaimedLamports": 0,
+        "txSigs": [],
+        "closedCount": 1
+      },
+      {
+        "ts": "2025-10-06T13:46:30.781Z",
+        "reclaimedLamports": 2034280,
+        "txSigs": [
+          "5SpRrmpQeukAp6vQ55P3u4DT9JFsHeQfQ8nySHesL7hGvaVxNKPZk43DrWyq7EtuozpqiC9PHGavb4hsR4zGNSXa"
+        ],
+        "closedCount": 1
+      },
+      {
+        "ts": "2025-10-11T08:22:53.264Z",
+        "reclaimedLamports": 0,
+        "txSigs": [],
+        "closedCount": 6
+      },
+      {
+        "ts": "2025-10-11T08:23:08.501Z",
+        "reclaimedLamports": 12230680,
+        "txSigs": [
+          "61azzw8JHTiTnNMZ4H9yt1Tm5hPcBHYHzZuzaq7EbyiRuHh1hhdyNGs94rgMdZN8MBcb8GKmbFUNHWnEEK83QQHF"
+        ],
+        "closedCount": 6
+      },
+      {
+        "ts": "2025-10-11T09:43:20.336Z",
+        "reclaimedLamports": 0,
+        "txSigs": [],
+        "closedCount": 4
+      },
+      {
+        "ts": "2025-10-11T09:43:51.957Z",
+        "reclaimedLamports": 0,
+        "txSigs": [],
+        "closedCount": 4
+      },
+      {
+        "ts": "2025-10-11T09:45:27.928Z",
+        "reclaimedLamports": 8077120,
+        "txSigs": [
+          "ZFe1DnepHZKJQhwnsvUTVemkqrtNgHntywqd8DLCZWMZXz6onxzZmQYpo9UPX1gmor4c7iQUaGzaC8mmWrQRbhW"
+        ],
+        "closedCount": 4
+      },
+      {
+        "ts": "2025-10-11T09:54:47.700Z",
+        "reclaimedLamports": 1959280,
+        "txSigs": [
+          "q3wDxPrBne6vQHtWMLidjBo2KNk6bkAE8WZzqSYHi9QXxmoBW9NMwwywSZv5ixkzK4W6ZzmpTpKfF1ApugPYe8i"
+        ],
+        "closedCount": 1
+      },
+      {
+        "ts": "2025-10-11T15:01:22.690Z",
+        "reclaimedLamports": 6037840,
+        "txSigs": [
+          "2sBCtBthqtQSokx3VZygJWg46Hk9qXxpv7NH9WjUoYnVoXkwhrEmcYSi9mG1ugJjrzG84SXhP94bj8HrVZirPmSA"
+        ],
+        "closedCount": 3
+      },
+      {
+        "ts": "2025-10-11T15:32:00.069Z",
+        "reclaimedLamports": 6037840,
+        "txSigs": [
+          "3Xc26Jdy6CZ2hYowau7gBBBaTGCfXgunJxgyW7dY2qEQQsYSUtLvmqeVQQX6DGbye2ZiKpnRDkCR2ZGVY4HSRRmT"
+        ],
+        "closedCount": 3
+      },
+      {
+        "ts": "2025-10-13T11:16:22.930Z",
+        "reclaimedLamports": 10191400,
+        "txSigs": [
+          "575cfzY8bX3hoHpmoejSv4pRRgf2Qxj5FZJj7CoSKVaAAdazyuLqUi1jNhffm14M6hSEjpXafMnScw2CyGeMoc8o"
+        ],
+        "closedCount": 5
+      },
+      {
+        "ts": "2025-10-15T05:46:25.763Z",
+        "reclaimedLamports": 12230680,
+        "txSigs": [
+          "5qsRXGLCJ6Zk8V2ANkLqgr5bKYFeqK44Ekrb6LQKLRht9ad96EJvQ4oycTHG87L3NuXaimy2yGysdv6PVicEwKcj"
+        ],
+        "closedCount": 6
+      },
+      {
+        "ts": "2025-10-15T11:04:30.348Z",
+        "reclaimedLamports": 16309240,
+        "txSigs": [
+          "3zhggXBAJqzjhowpUnpgq4vUmcwCr23NpKa8NTJE96RWtRvMZWN8Dv4JBZ2qbeU2nXjQo5eUSq9xZeZuy4vmQpF1"
+        ],
+        "closedCount": 8
+      },
+      {
+        "ts": "2025-10-15T12:36:17.147Z",
+        "reclaimedLamports": 6112840,
+        "txSigs": [
+          "2KRHRMqJAoSGy6KNhy9krWVj7umiSe6oExB37qG6GAW8opQHE3yoyUsYFqJUNQz5geoXgpNTSNNGdVeDPfoUMsE2"
+        ],
+        "closedCount": 3
+      },
+      {
+        "ts": "2025-10-16T08:01:52.058Z",
+        "reclaimedLamports": 8077120,
+        "txSigs": [
+          "4DNWnDc3Ny3bLTcZfSdhyvC7Xh8ASFUuxGEawnfHRqyDjLtXGvDQSEoQtEsBgPxw4jXAJwqZVB6bi9bq25MsMizM"
+        ],
+        "closedCount": 4
+      },
+      {
+        "ts": "2025-10-16T08:46:07.583Z",
+        "reclaimedLamports": 10116400,
+        "txSigs": [
+          "rRf9C1n8czVjwsyHyAbXrEJEprozkXPaoGgRz5TDH5QDWqhQbFwzvt3WKvhvwJg5179oFz7aTpXGbTwFnJFLYgQ"
+        ],
+        "closedCount": 5
+      },
+      {
+        "ts": "2025-10-16T11:55:00.420Z",
+        "reclaimedLamports": 20312800,
+        "txSigs": [
+          "4DCd2BvtSzoEWwieXgV1iAJu7c8HDCcZ38NxDofgnDKBkez2gccA6VTpqZYyaefFkqn9JBRrh6YZ6Ph6Z5xoTkp9"
+        ],
+        "closedCount": 10
+      }
+    ]
+  }
+}

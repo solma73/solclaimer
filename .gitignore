@@ -42,7 +42,7 @@ Thumbs.db
 # ---- Project data ----
 # локални файлове с ключове/баланси/логове
 config/sniffer_config.py
-data/
+#data/
 log/
 *.log
 
